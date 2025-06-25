@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BookMyMatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -23,8 +24,22 @@
 
     <main>
       <div id="home">
-        <h3>Experience the Thrill of Cricket Like Never Before</h3>
-        <p>Explore iconic stadiums, catch electrifying live matches, and book your seats with just a click. Your ultimate cricket journey starts here!</p><br>
+        <div id="countdown" class="container my-2 p-4 border-start border-5 border-success bg-light shadow rounded text-center">
+          <h2 class="fs-3 text-success fw-bold">
+            Next Match: <span id="match-teams" class="text-dark fw-semibold"></span>
+          </h2>
+          <p class="fs-4 text-muted">
+            Date & Time: <span id="match-datetime" class="fw-normal text-dark"></span>
+          </p>
+          <h3 class="fs-2 text-danger fw-bold mt-4">
+            Time Left: <span id="time-left" class="text-primary fw-bold" style="font-family: monospace;"></span>
+          </h3>
+        </div>
+
+        <div class="images-head">
+          <h3>Experience the Thrill of Cricket Like Never Before</h3>
+          <p>Explore iconic stadiums, catch electrifying live matches, and book your seats with just a click. Your ultimate cricket journey starts here!</p><br>
+        </div>
 
         <img
           src="https://images.unsplash.com/photo-1625401586082-9a9b17bc4ce5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUxfHxjcmlja2V0fGVufDB8fDB8fHww"
@@ -51,7 +66,7 @@
           alt="Trent Bridge Cricket Ground"
         />
         <img
-          src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npZpv9Dcuo2VE9TTCac222svHQzmRDQ99CKV5g3-Xq4JkEmxygHBZkVWI71h460OdcCub6ck97NiB-9UQBzv-pB5u1cqS804EHV59l5LSsSs8PkMwgRxAu8-7XMLhD0jlcsZMui=s1360-w1360-h1020-rw"
+          src="https://specialplacesofindia.com/wp-content/uploads/2024/05/Untitled-design-2024-06-06T155903.493.jpg"
           alt="Wankhede Stadium"
         />
         <img
@@ -115,5 +130,6 @@
       <hr />
       <p>&copy; 2025 BookMyMatch | Developed By Hiten</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
