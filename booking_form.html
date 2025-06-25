@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Ticket Booking</title>
+</head>
+<body>
+
+<div id="book">
+    <h2 class="form-heading">Book Your Match Tickets</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Enter Match and Personal Details</legend>
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name here" required>
+            <br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email here">
+            <br>
+
+            <label for="pwd">Password: </label>
+            <input type="password" name="password" id="pwd" placeholder="Enter password here">
+            <br>
+            
+            <label for="match-date">Select Match Date: </label>
+            <input type="date" name="match-date" id="match-date">
+            <br><br>
+
+            <label for="stadium-selection">Select Stadium: </label><br>
+            <input type="radio" name="stadium" id="w-stadium">
+            <label for="stadium">Wankhede Stadium</label>
+            <br>
+            <input type="radio" name="stadium" id="nm-stadium">
+            <label for="stadium">Narendra Modi Stadium</label>
+            <br><br>
+
+            <label for="block-selection">Block Preference:</label><br>
+            <input type="radio" id="block-a" name="block" value="A">
+            <label for="block">Block A</label><br>
+            <input type="radio" id="block-b" name="block" value="B">
+            <label for="block">Block B</label><br>
+            <input type="radio" id="block-c" name="block" value="C">
+            <label for="block">Block C</label>
+            <br><br>
+            
+            <label for="seats">Number of seats: </label>
+            <input type="number" name="seats" id="seats" placeholder="Enter the no. of seats">
+            <br>
+
+            <label for="rating">Rate this booking experience: </label>
+            <input type="range" name="rating" id="rating" min="1" max="10">
+            <br>
+
+            <label for="id-upload">Upload any Government ID: </label>
+            <input type="file" name="govtid" id="id-upload">
+            <br>
+
+            <input type="checkbox" name="terms">
+            <label>I agree to the terms and conditions</label><br>
+
+            <input type="submit" value="Book Now">
+            <input id="reset" type="reset" value="Reset">
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <h2 class="table-heading">Stadium Seating Price Chart</h2>
+    <table class="table">
+        <tr>
+            <th>Block</th>
+            <th>Seats Available</th>
+            <th>Price in INR</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>90</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>150</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>120</td>
+            <td>3000</td>
+        </tr>
+    </table>
+</div>
